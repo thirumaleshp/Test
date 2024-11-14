@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Payment Integration</title>
+    <script src="js.js"></script> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .payment-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 400px;
+        }
+        h1 {
+            color: #333;
+        }
+        .payment-options {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="payment-container">
+    <h1>Select Payment Method</h1>
+    <div class="payment-options">
+        <button id="upi-button">Pay via UPI</button>
+        <button id="banking-button">Pay via Net Banking</button>
+        <button id="crypto-button">Pay via Crypto</button>
+        <button id="paypal-button">Pay via PayPal</button>
+    </div>
+</div>
+
+<!-- Link to the external JavaScript file -->
+<script src="multi-payment.js"></script>
+
+</body>
+</html>
